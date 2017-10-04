@@ -10,6 +10,9 @@ import UIKit
 
 class ItemCell: UITableViewCell {
 
+    @IBOutlet weak var itemSubtitleLabel: UILabel!
+    @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var itemTitleLabel: UILabel!
     static let identifier = "cell"
     
     override func awakeFromNib() {
@@ -21,6 +24,11 @@ class ItemCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setItem(item: Item) {
+        itemTitleLabel.text = item.getTitle()
+        itemSubtitleLabel.text = item.getSubtitle()
     }
 
 }

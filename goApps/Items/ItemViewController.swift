@@ -8,12 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ItemViewController: UIViewController {
 
+    @IBOutlet weak var itemTableView: UITableView!
+    
+    var items = [Item]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        itemTableView.dataSource = self as! UITableViewDataSource
         displayItems()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,16 +33,25 @@ class ViewController: UIViewController {
             if erorr == false {
                 if let json = json {
                    print(json)
+                    self.items = Item.arrayFromJSON(json: json)
                     
-                    
-//                    DispatchQueue.main.async {
-//                        self.categoriesCollectionView?.reloadData()
-//                    }
+                    DispatchQueue.main.async {
+                        self.itemTableView?.reloadData()
+                    }
                 }
             }
         }
     }
-
-
 }
 
+extension ItemViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+}

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D024D1951F84BE7D00C91BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1941F84BE7D00C91BEA /* AppDelegate.swift */; };
-		D024D1971F84BE7D00C91BEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1961F84BE7D00C91BEA /* ViewController.swift */; };
+		D024D1971F84BE7D00C91BEA /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1961F84BE7D00C91BEA /* ItemViewController.swift */; };
 		D024D19A1F84BE8100C91BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D024D1981F84BE8000C91BEA /* Main.storyboard */; };
 		D024D19C1F84BE8100C91BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D024D19B1F84BE8100C91BEA /* Assets.xcassets */; };
 		D024D19F1F84BE8200C91BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D024D19D1F84BE8200C91BEA /* LaunchScreen.storyboard */; };
@@ -59,7 +59,7 @@
 /* Begin PBXFileReference section */
 		D024D1911F84BE7A00C91BEA /* goApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D024D1941F84BE7D00C91BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D024D1961F84BE7D00C91BEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D024D1961F84BE7D00C91BEA /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		D024D1991F84BE8000C91BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D024D19B1F84BE8100C91BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D024D19E1F84BE8200C91BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,7 +134,6 @@
 			children = (
 				D024D1D51F84CA8200C91BEA /* Items */,
 				D024D1C61F84C1AB00C91BEA /* support */,
-				D024D1961F84BE7D00C91BEA /* ViewController.swift */,
 				D024D1C21F84C15D00C91BEA /* Router.swift */,
 				D024D1C41F84C19400C91BEA /* API.swift */,
 				D024D1D31F84CA6D00C91BEA /* MyJSONProtocol.swift */,
@@ -186,6 +185,7 @@
 		D024D1D51F84CA8200C91BEA /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				D024D1961F84BE7D00C91BEA /* ItemViewController.swift */,
 				D024D1D61F84CA9E00C91BEA /* Item.swift */,
 				D024D1D81F84DD1900C91BEA /* ItemCell.swift */,
 			);
@@ -327,7 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D024D1971F84BE7D00C91BEA /* ViewController.swift in Sources */,
+				D024D1971F84BE7D00C91BEA /* ItemViewController.swift in Sources */,
 				D024D1C31F84C15D00C91BEA /* Router.swift in Sources */,
 				D024D1C51F84C19400C91BEA /* API.swift in Sources */,
 				D024D1951F84BE7D00C91BEA /* AppDelegate.swift in Sources */,
@@ -505,7 +505,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/goApps/support/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ewa.goApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,7 +524,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/goApps/support/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ewa.goApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
