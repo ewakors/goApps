@@ -14,6 +14,15 @@
 		D024D19F1F84BE8200C91BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D024D19D1F84BE8200C91BEA /* LaunchScreen.storyboard */; };
 		D024D1AA1F84BE8300C91BEA /* goAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1A91F84BE8300C91BEA /* goAppsTests.swift */; };
 		D024D1B51F84BE8600C91BEA /* goAppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1B41F84BE8600C91BEA /* goAppsUITests.swift */; };
+		D024D1C31F84C15D00C91BEA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1C21F84C15D00C91BEA /* Router.swift */; };
+		D024D1C51F84C19400C91BEA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1C41F84C19400C91BEA /* API.swift */; };
+		D024D1CE1F84C69F00C91BEA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D024D1CC1F84C69F00C91BEA /* Alamofire.framework */; };
+		D024D1CF1F84C69F00C91BEA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D024D1CD1F84C69F00C91BEA /* SwiftyJSON.framework */; };
+		D024D1D11F84C6B000C91BEA /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D024D1CC1F84C69F00C91BEA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D024D1D21F84C6B000C91BEA /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D024D1CD1F84C69F00C91BEA /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D024D1D41F84CA6D00C91BEA /* MyJSONProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1D31F84CA6D00C91BEA /* MyJSONProtocol.swift */; };
+		D024D1D71F84CA9E00C91BEA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1D61F84CA9E00C91BEA /* Item.swift */; };
+		D024D1D91F84DD1900C91BEA /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024D1D81F84DD1900C91BEA /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +42,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D024D1D01F84C6A500C91BEA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D024D1D11F84C6B000C91BEA /* Alamofire.framework in CopyFiles */,
+				D024D1D21F84C6B000C91BEA /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D024D1911F84BE7A00C91BEA /* goApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D024D1941F84BE7D00C91BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +70,15 @@
 		D024D1B01F84BE8500C91BEA /* goAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D024D1B41F84BE8600C91BEA /* goAppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goAppsUITests.swift; sourceTree = "<group>"; };
 		D024D1B61F84BE8700C91BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D024D1C21F84C15D00C91BEA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D024D1C41F84C19400C91BEA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D024D1C81F84C68A00C91BEA /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		D024D1C91F84C68A00C91BEA /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/iOS/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
+		D024D1CC1F84C69F00C91BEA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		D024D1CD1F84C69F00C91BEA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		D024D1D31F84CA6D00C91BEA /* MyJSONProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJSONProtocol.swift; sourceTree = "<group>"; };
+		D024D1D61F84CA9E00C91BEA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D024D1D81F84DD1900C91BEA /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D024D1CE1F84C69F00C91BEA /* Alamofire.framework in Frameworks */,
+				D024D1CF1F84C69F00C91BEA /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,7 @@
 				D024D1A81F84BE8300C91BEA /* goAppsTests */,
 				D024D1B31F84BE8500C91BEA /* goAppsUITests */,
 				D024D1921F84BE7A00C91BEA /* Products */,
+				D024D1C71F84C68900C91BEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +132,12 @@
 		D024D1931F84BE7A00C91BEA /* goApps */ = {
 			isa = PBXGroup;
 			children = (
-				D024D1941F84BE7D00C91BEA /* AppDelegate.swift */,
+				D024D1D51F84CA8200C91BEA /* Items */,
+				D024D1C61F84C1AB00C91BEA /* support */,
 				D024D1961F84BE7D00C91BEA /* ViewController.swift */,
-				D024D1981F84BE8000C91BEA /* Main.storyboard */,
-				D024D19B1F84BE8100C91BEA /* Assets.xcassets */,
-				D024D19D1F84BE8200C91BEA /* LaunchScreen.storyboard */,
-				D024D1A01F84BE8200C91BEA /* Info.plist */,
+				D024D1C21F84C15D00C91BEA /* Router.swift */,
+				D024D1C41F84C19400C91BEA /* API.swift */,
+				D024D1D31F84CA6D00C91BEA /* MyJSONProtocol.swift */,
 			);
 			path = goApps;
 			sourceTree = "<group>";
@@ -125,6 +160,38 @@
 			path = goAppsUITests;
 			sourceTree = "<group>";
 		};
+		D024D1C61F84C1AB00C91BEA /* support */ = {
+			isa = PBXGroup;
+			children = (
+				D024D1941F84BE7D00C91BEA /* AppDelegate.swift */,
+				D024D1981F84BE8000C91BEA /* Main.storyboard */,
+				D024D19B1F84BE8100C91BEA /* Assets.xcassets */,
+				D024D19D1F84BE8200C91BEA /* LaunchScreen.storyboard */,
+				D024D1A01F84BE8200C91BEA /* Info.plist */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		D024D1C71F84C68900C91BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D024D1CC1F84C69F00C91BEA /* Alamofire.framework */,
+				D024D1CD1F84C69F00C91BEA /* SwiftyJSON.framework */,
+				D024D1C81F84C68A00C91BEA /* Alamofire.framework.dSYM */,
+				D024D1C91F84C68A00C91BEA /* SwiftyJSON.framework.dSYM */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D024D1D51F84CA8200C91BEA /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				D024D1D61F84CA9E00C91BEA /* Item.swift */,
+				D024D1D81F84DD1900C91BEA /* ItemCell.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +202,7 @@
 				D024D18D1F84BE7A00C91BEA /* Sources */,
 				D024D18E1F84BE7A00C91BEA /* Frameworks */,
 				D024D18F1F84BE7A00C91BEA /* Resources */,
+				D024D1D01F84C6A500C91BEA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -260,7 +328,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D024D1971F84BE7D00C91BEA /* ViewController.swift in Sources */,
+				D024D1C31F84C15D00C91BEA /* Router.swift in Sources */,
+				D024D1C51F84C19400C91BEA /* API.swift in Sources */,
 				D024D1951F84BE7D00C91BEA /* AppDelegate.swift in Sources */,
+				D024D1D91F84DD1900C91BEA /* ItemCell.swift in Sources */,
+				D024D1D71F84CA9E00C91BEA /* Item.swift in Sources */,
+				D024D1D41F84CA6D00C91BEA /* MyJSONProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +500,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = goApps/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/goApps/support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ewa.goApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,8 +519,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = goApps/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/goApps/support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ewa.goApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
